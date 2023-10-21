@@ -1,1 +1,1 @@
-Este diretório contém as imagens para o wiki.
+This directory contains the context diagram images for the wiki.
