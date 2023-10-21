@@ -1,1 +1,1 @@
-This directory contains the images for the wiki.
+This directory contains the class UML diagram images for the wiki.
