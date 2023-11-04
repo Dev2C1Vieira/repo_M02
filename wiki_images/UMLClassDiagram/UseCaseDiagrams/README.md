@@ -1,1 +1,1 @@
-This directory contains the Use Case diagrams images for the wiki.
+This directory contains the use case diagrams images for the wiki.
