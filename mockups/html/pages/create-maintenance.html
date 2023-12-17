@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University Residence</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <div class="banner maintenance">
+          <h1>Record Maintenance</h1>
+        </div>
+
+        <div class="item">
+          <p>Maintenance Description</p>
+          <textarea rows="3" ></textarea>
+        </div>
+
+        <div class="item">
+          <p>Maintenance Date</p>
+          <input type="date" required  />
+        </div>
+
+        <div class="item">
+            <p>Select Intervention Team</p>
+            <select id="requestStatus"">
+              <option value=1>Team A - Construction</option>
+              <option value=2>Team B - Eletricity</option>
+              <option value=2>Team C - Water</option>
+            </select>
+          </div>
+
+          <div class="item">
+            <p>If necessary, you can upload a photo</p>
+            <input id="imageUpload" type="file" accept="image/*" />
+            <img id="previewImage" src="#" alt="Preview" style="display: none; max-width: 100px; max-height: 100px" />
+          </div>
+          
+
+          
+          <div class="btn-block">
+            <button>Create Maintenance</button>
+          </div>
+          
+      </form>
+    </div>
+    <script src="../script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
