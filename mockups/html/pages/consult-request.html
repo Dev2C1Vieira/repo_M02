@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University Residence</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <div class="banner maintenance">
+          <h1>Consult Request</h1>
+        </div>
+
+        <div class="item status-item">
+          <p><span id="currentState">In Progress</span></p>
+        </div>
+
+        <div class="item">
+          <p>Request Description</p>
+          <textarea rows="3" disabled>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac felis quis tortor feugiat posuere at sit amet ex. Phasellus interdum augue sapien, vel maximus metus gravida sed. Phasellus et leo vel dui dignissim lacinia vel nec augue. Phasellus metus massa, malesuada vel elementum vel, suscipit sit amet ligula. Duis non turpis eu lectus luctus feugiat in et odio. Aliquam at accumsan orci. Vivamus quis elit lacinia lectus iaculis semper. Donec sit amet nibh consectetur, sollicitudin tortor a, semper sapien. Nam fringilla, justo a efficitur tincidunt, urna arcu gravida nulla, sed ultricies felis massa sed justo. Nulla imperdiet tellus at nisi convallis, vel pulvinar lorem efficitur. Aenean mi enim, pulvinar nec turpis ut, posuere vulputate ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </textarea
+          >
+        </div>
+
+        <div class="item">
+          <p>Date for intervention</p>
+          <input type="date" name="bdate" id="bdate" required disabled />
+        </div>
+
+        <div class="item">
+            <p>Uploaded Photos</p>
+            <div class="image-container">
+              <div class="image-item">
+                <img class="preview-image" onclick="zoomImage(this)" src="../img/500.png" alt="Uploaded Image" />
+               </div>
+              <div class="image-item">
+                <img class="preview-image" onclick="zoomImage(this)" src="../img/500.png" alt="Uploaded Image" />
+               </div>
+            </div>
+          </div>
+
+          <br>
+          <hr>
+          
+          <div class="btn-block">
+            <button type="submit" href="/">Update Request</button>
+            <button type="submit" class="save" href="/">Close Request</button>
+          </div>
+          
+      </form>
+    </div>
+    <script src="../script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>

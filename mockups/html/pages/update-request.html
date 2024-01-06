@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University Residence Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <div class="banner residence">
+          <h1>Update Request</h1>
+        </div>
+
+        <div class="item">
+          <p>Select request to update</p>
+          <select>
+            <option value="">Ricardo Amaro - Request id: 512</option>
+            <option value="">Joao Antonio - Request id: 125</option>
+            <option value="">Pedro Vieira - Request id: 735</option>
+            <option value="">Gonlaço Simoes - Request id: 523</option>
+            <option value="">Marcelo Sousa - Request id: 412</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <p>Update request description</p>
+          <textarea rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac felis quis tortor feugiat posuere at sit amet ex. Phasellus interdum augue sapien, vel maximus metus gravida sed. Phasellus et leo vel dui dignissim lacinia vel nec augue. Phasellus metus massa, malesuada vel elementum vel, suscipit sit amet ligula. Duis non turpis eu lectus luctus feugiat in et odio. Aliquam at accumsan orci. Vivamus quis elit lacinia lectus iaculis semper. Donec sit amet nibh consectetur, sollicitudin tortor a, semper sapien. Nam fringilla, justo a efficitur tincidunt, urna arcu gravida nulla, sed ultricies felis massa sed justo. Nulla imperdiet tellus at nisi convallis, vel pulvinar lorem efficitur. Aenean mi enim, pulvinar nec turpis ut, posuere vulputate ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+        </div>
+
+        <div class="item">
+          <p>Update date for intervention</p>
+          <input type="date" id="bdate" name="bdate" required />
+        </div>
+        
+      
+      <div class="item">
+        <p>Uploaded Photos</p>
+        <input id="imageUpload" type="file" accept="image/*" />
+
+        <div class="image-container">
+          <div class="image-item">
+            <img class="preview-image" onclick="UpdateImages(this)" src="../img/500.png" alt="Uploaded Image" />
+           </div>
+          <div class="image-item">
+            <img class="preview-image" onclick="UpdateImages(this)" src="../img/500.png" alt="Uploaded Image" />
+           </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <p>Additional information</p>
+        <textarea rows="3"></textarea>
+      </div>
+
+
+      <div class="btn-block">
+        <button>Update Request</button>
+      </div>
+ 
+      </form>
+    </div>
+    <script src="../script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>

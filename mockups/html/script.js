@@ -1,12 +1,13 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-  
   let today = new Date();
 
   let dd = String(today.getDate()).padStart(2, "0");
-  let mm = String(today.getMonth() + 1).padStart(2, "0"); 
+  let mm = String(today.getMonth() + 1).padStart(2, "0");
   let yyyy = today.getFullYear();
 
   today = yyyy + "-" + mm + "-" + dd;
+
+  console.log(today);
 
   document.getElementById("bdate").value = today;
 });
@@ -30,13 +31,36 @@ function checkPending(option) {
 function zoomImage(icon) {
   var image = $(icon).siblings(".preview-image");
 
-  // Clona a imagem clicada e a exibe em um modal ou div centralizada
-  var modalContent = $('<div class="modal-content"></div>').append($('<img class="zoomed-image" src="https://via.placeholder.com/500">'));
+  var modalContent = $('<div class="modal-content"></div>').append($('<img class="zoomed-image" src="' + $(icon).attr("src") + '">'));
 
   var modal = $('<div class="modal"></div>').append(modalContent);
   $("body").append(modal);
 
   modal.click(function () {
+    $(this).remove();
+  });
+}
+
+
+function UpdateImages(icon) {
+  var image = $(icon).siblings(".preview-image");
+
+  var modalContent = $('<div class="modal-content"></div>').append(
+    $('<img class="zoomed-image" src="' + $(icon).attr("src") + '">'),
+    $('<div class="buttons-container"></div>').append(
+      $('<button class="update-button">Atualizar</button>').click(function() {
+        console.log("Update image logic goes here");
+      }),
+      $('<button class="delete-button delete">Eliminar</button>').click(function() {
+        console.log("Delete image logic goes here");
+      })
+    )
+  );
+
+  var modal = $('<div class="modal"></div>').append(modalContent);
+  $("body").append(modal);
+
+  modal.click(function() {
     $(this).remove();
   });
 }

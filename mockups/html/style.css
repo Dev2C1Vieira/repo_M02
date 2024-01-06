@@ -169,3 +169,35 @@ button:hover {
     color: #000;
     cursor: pointer;
   }
+
+
+  .buttons-container {
+    text-align: center;
+    margin-top: 10px; /* Adjust this margin as needed */
+  }
+  
+  .update-button,
+  .delete-button {
+    margin: 5px;
+    /* Add any additional styling you want for the buttons */
+  }
+
+  .delete {
+    background-color: #e33232;
+  }
+
+  .status-item {
+    position: absolute;
+    top: 20px; /* Ajuste a distância do topo conforme necessário */
+    right: 20px; /* Ajuste a distância da direita conforme necessário */
+    background-color: green; /* Alteração para cor verde */
+    color: white; /* Alteração para texto branco */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cores para diferentes estados */
+  #currentState {
+    color: white; /* Defina a cor do texto como branco */
+  }
